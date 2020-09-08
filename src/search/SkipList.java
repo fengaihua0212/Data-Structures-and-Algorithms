@@ -23,6 +23,7 @@ public class SkipList {
         skipList.insert(20);
         skipList.insert(24);
         skipList.insert(30);
+        skipList.delete(10);
         System.out.println(skipList.find(10));
         skipList.printAll();
     }
