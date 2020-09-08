@@ -135,11 +135,14 @@ public class SkipList {
 
         @Override
         public String toString() {
-            return "Node{" +
-                    "data=" + data +
-                    ", forwards=" + Arrays.toString(forwards) +
-                    ", maxLevel=" + maxLevel +
-                    '}';
+            StringBuilder builder = new StringBuilder();
+            builder.append("{ data: ");
+            builder.append(data);
+            builder.append("; levels: ");
+            builder.append(maxLevel);
+            builder.append(" }");
+
+            return builder.toString();
         }
     }
 }
