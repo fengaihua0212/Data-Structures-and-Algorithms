@@ -28,7 +28,7 @@ public class BubbleSort {
         for (int i = 0; i < n; i++) {
             // 提前结束排序标志
             boolean flag = false;
-            for (int j = 0; j < n - 1; j++) {
+            for (int j = 0; j < n - i - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
                     // 交换
                     int temp = arr[j];
